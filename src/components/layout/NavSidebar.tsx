@@ -1,6 +1,6 @@
 'use client';
 
-import { Home, MapPin, Package, ShoppingCart, ArrowDownUp, Vote, LogOut, X } from 'lucide-react';
+import { Home, MapPin, Package, ShoppingCart, ArrowDownUp, Vote, LogOut} from 'lucide-react';
 import IconButton from '../ui/Buttons/IconButton';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
