@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 });
 
 const fixel = localFont({
-  src: [{path: ".././fonts/FixelDisplay-Semibold.woff2"}],
+  src: [{path: "../fonts/FixelDisplay-Semibold.woff2"}],
   variable: "--font-display",
 });
 
