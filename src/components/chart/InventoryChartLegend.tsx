@@ -3,9 +3,7 @@ export default function InventoryChartLegend() {
     <div className="flex flex-wrap gap-4 items-center px-2 pb-2">
       <div className="flex items-center gap-2">
         <span className="w-2.5 h-1 bg-primary-dark" />
-        <span className="text-xs text-gray-900 font-normal">
-          Projected Inventory
-        </span>
+        <span className="text-xs text-gray-900 font-normal">Projected Inventory</span>
       </div>
 
       <div className="flex items-center gap-2">
@@ -24,9 +22,7 @@ export default function InventoryChartLegend() {
             strokeDasharray="2"
           />
         </svg>
-        <span className="text-xs text-gray-900 font-normal">
-          Safety Stock Level
-        </span>
+        <span className="text-xs text-gray-900 font-normal">Safety Stock Level</span>
       </div>
     </div>
   );

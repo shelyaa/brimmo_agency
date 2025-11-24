@@ -1,5 +1,5 @@
-import {FORECAST_FEATURES} from "@/mocks/cardsInfo";
-import { FeatureCard } from "../ui/Cards/FeatureCard";
+import { FORECAST_FEATURES } from '@/mocks/cardsInfo';
+import { FeatureCard } from '../ui/Cards/FeatureCard';
 
 export const FeatureGrid = () => {
   return (

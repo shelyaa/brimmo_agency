@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #e9ecf4;
@@ -9,29 +9,30 @@
   --secondary-color: #07142980;
   --icon-hover: #cbd4e1;
   --active-icon-color: #0e64ee;
-  --bg-card: #FFFFFFCC;
+  --bg-card: #ffffffcc;
   --bg-card-feat: #f4f7fb;
   --primary-dark: #465166;
   --primary-light: #a6c5fa;
-  --success: #7FCB87;
+  --success: #7fcb87;
 
+  --tooltip-label: #8d97b6;
+  --tooltip-value: #323844;
+  --tooltip-border: #eef0f3;
+  --tooltip-dot-inventory: #8d97b6;
+  --tooltip-dot-demand: #87b1f7;
+  --tooltip-divider: #eaeef3;
 
   --font-sans: var(--font-open), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), ui-serif, Georgia, serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: Open Sans, sans-serif;
+  font-family:
+    Open Sans,
+    sans-serif;
 }
 
 aside {
@@ -97,4 +98,23 @@ button {
 
 .stroke-success {
   stroke: var(--success);
+}
+
+.bg-dot-inventory {
+  background-color: var(--tooltip-dot-inventory);
+}
+.bg-dot-demand {
+  background-color: var(--tooltip-dot-demand);
+}
+.border-tooltip {
+  border-color: var(--tooltip-border);
+}
+.bg-divider {
+  background-color: var(--tooltip-divider);
+}
+.text-label {
+  color: var(--tooltip-label);
+}
+.text-value {
+  color: var(--tooltip-value);
 }

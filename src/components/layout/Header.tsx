@@ -1,6 +1,6 @@
-import {Bell, Search, Sun} from "lucide-react";
-import IconButton from "../ui/Buttons/IconButton";
-import Image from "next/image";
+import { Bell, Search, Sun } from 'lucide-react';
+import IconButton from '../ui/Buttons/IconButton';
+import Image from 'next/image';
 
 export default function Header() {
   return (

@@ -1,5 +1,5 @@
-import {FORECAST_INFO} from "@/mocks/cardsInfo";
-import { InfoCard } from "../ui/Cards/InfoCard";
+import { FORECAST_INFO } from '@/mocks/cardsInfo';
+import { InfoCard } from '../ui/Cards/InfoCard';
 
 export const InfoGrid = () => {
   return (

@@ -1,5 +1,5 @@
-import SectionEllipse from "../ui/SectionEllipse/SectionEllipse";
-import {Typography} from "../ui/Typography/Typography";
+import SectionEllipse from '../ui/SectionEllipse/SectionEllipse';
+import { Typography } from '../ui/Typography/Typography';
 
 interface HowForecastingWorksSectionProps {
   title: string;

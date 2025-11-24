@@ -1,18 +1,18 @@
-import {Open_Sans} from "next/font/google";
-import localFont from "next/font/local";
-import "./globals.css";
-import NavSidebar from "../components/layout/NavSidebar";
-import Header from "../components/layout/Header";
+import { Open_Sans } from 'next/font/google';
+import localFont from 'next/font/local';
+import './globals.css';
+import NavSidebar from '../components/layout/NavSidebar';
+import Header from '../components/layout/Header';
 
 const openSans = Open_Sans({
-  subsets: ["latin", "cyrillic"],
-  variable: "--font-open",
+  subsets: ['latin', 'cyrillic'],
+  variable: '--font-open',
 });
 
 const fixel = localFont({
-  src: [{path: "../fonts/FixelDisplay-SemiBold.woff2"}],
+  src: [{ path: '../fonts/FixelDisplay-SemiBold.woff2' }],
 
-  variable: "--font-display",
+  variable: '--font-display',
 });
 
 export default function RootLayout({
@@ -29,9 +29,7 @@ export default function RootLayout({
           <div className="flex-1 flex flex-col h-full overflow-hidden">
             <Header />
 
-            <main className="flex-1 overflow-auto p-4 md:p-0 md:pr-2">
-              {children}
-            </main>
+            <main className="flex-1 overflow-auto p-4 md:p-0 md:pr-2">{children}</main>
           </div>
         </div>
       </body>

@@ -1,16 +1,11 @@
-import type { FeatureCard } from "@/types.ts";
-import { Typography } from "../Typography/Typography";
+import type { FeatureCard } from '@/types';
+import { Typography } from '../Typography/Typography';
 
-export function FeatureCard({
-  title,
-  subtitle,
-  description,
-  icon: Icon,
-}: FeatureCard) {
+export function FeatureCard({ title, subtitle, description, icon: Icon }: FeatureCard) {
   return (
-    <div className="flex flex-col rounded-2xl bg-card-feat p-5 pl-[18px] min-w-[280px] min-h-[180px]">
-      <div className="flex justify-between items-start">
-        <div> 
+    <div className="flex flex-col rounded-2xl bg-card-feat p-5 pl-[18px] min-w-[280px]">
+      <div className="flex justify-between items-start mb-8">
+        <div>
           <Typography variant="label">{title}</Typography>
           <Typography variant="title">{subtitle}</Typography>
         </div>

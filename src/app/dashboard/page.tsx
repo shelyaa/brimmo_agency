@@ -1,10 +1,10 @@
-import {FeatureGrid} from "@/components/grids/FeatureGrid";
-import {InfoGrid} from "@/components/grids/InfoGrid";
-import {ChartSection} from "@/components/sections/ChartSection";
-import {ForecastingHeaderSection} from "@/components/sections/ForecastingHeaderSection";
-import {HowForecastingWorksSection} from "@/components/sections/HowForecastingWorksSection";
-import {Button} from "@/components/ui/Buttons/Button";
-import {Eye} from "lucide-react";
+import { FeatureGrid } from '@/components/grids/FeatureGrid';
+import { InfoGrid } from '@/components/grids/InfoGrid';
+import { ChartSection } from '@/components/sections/ChartSection';
+import { ForecastingHeaderSection } from '@/components/sections/ForecastingHeaderSection';
+import { HowForecastingWorksSection } from '@/components/sections/HowForecastingWorksSection';
+import { Button } from '@/components/ui/Buttons/Button';
+import { Eye } from 'lucide-react';
 
 export default function Dashboard() {
   return (

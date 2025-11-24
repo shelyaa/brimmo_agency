@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface CardEllipseProps extends React.HTMLAttributes<HTMLDivElement> {
   width?: number;
@@ -21,11 +21,11 @@ const SectionEllipse: React.FC<CardEllipseProps> = ({
   top,
   right,
   bottom,
-  color = "#b4e3fd",
+  color = '#b4e3fd',
   opacity = 0.5,
   blur = 32,
   style,
-  className = "",
+  className = '',
   ...rest
 }) => {
   return (
@@ -40,7 +40,7 @@ const SectionEllipse: React.FC<CardEllipseProps> = ({
         bottom,
         background: color,
         opacity,
-        filter: `blur(${typeof blur === "number" ? `${blur}px` : blur})`,
+        filter: `blur(${typeof blur === 'number' ? `${blur}px` : blur})`,
         ...style,
       }}
       aria-hidden="true"
