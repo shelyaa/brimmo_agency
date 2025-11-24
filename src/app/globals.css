@@ -9,6 +9,12 @@
   --secondary-color: #07142980;
   --icon-hover: #cbd4e1;
   --active-icon-color: #0e64ee;
+  --bg-card: #FFFFFFCC;
+  --bg-card-feat: #f4f7fb;
+  --primary-dark: #465166;
+  --primary-light: #a6c5fa;
+  --success: #7FCB87;
+
 
   --font-sans: var(--font-open), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), ui-serif, Georgia, serif;
@@ -71,4 +77,24 @@ button {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+.bg-card {
+  background-color: var(--bg-card);
+}
+
+.bg-card-feat {
+  background-color: var(--bg-card-feat);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light);
+}
+
+.stroke-success {
+  stroke: var(--success);
 }

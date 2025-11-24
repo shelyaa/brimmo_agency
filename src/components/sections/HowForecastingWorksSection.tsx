@@ -13,7 +13,7 @@ export function HowForecastingWorksSection({
   children,
 }: HowForecastingWorksSectionProps) {
   return (
-    <section className="bg-[#f4f7fb] rounded-3xl p-6 w-full max-w-[440px] relative overflow-hidden">
+    <section className="bg-card-feat rounded-3xl p-6 w-full relative overflow-hidden">
       <SectionEllipse
         left={50}
         bottom={10}
@@ -40,7 +40,7 @@ export function HowForecastingWorksSection({
       <Typography variant="description" className="pb-5">
         {description}
       </Typography>
-      <div className="relative z-20">{children}</div>
+      <div className="relative z-20 flex items-center">{children}</div>
     </section>
   );
 }

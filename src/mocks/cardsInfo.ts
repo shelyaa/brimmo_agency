@@ -1,21 +1,9 @@
-import {Icon1, Icon2, Icon3, Settings, MapPin, BadgePercent} from "@/icons";
-import { LucideIcon } from "lucide-react";
+import {Icon1, Icon2, Icon3} from "@/icons";
+import { FeatureCard, InfoCard } from "@/types.ts";
+import {BadgePercent, MapPin, Settings} from "lucide-react";
 
-export interface ForecastFeatureCard {
-  title: string;
-  subtitle: string;
-  description: string;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-}
 
-export interface ForecastInfoCard {
-  title: string;
-  description: string;
-  icon: LucideIcon;
-  color: string;
-}
-
-export const FORECAST_FEATURES: ForecastFeatureCard[] = [
+export const FORECAST_FEATURES: FeatureCard[] = [
   {
     title: "Forecasting Method",
     subtitle: "ROBUST_ROS",
@@ -39,7 +27,7 @@ export const FORECAST_FEATURES: ForecastFeatureCard[] = [
   },
 ];
 
-export const FORECAST_INFO: ForecastInfoCard[] = [
+export const FORECAST_INFO: InfoCard[] = [
   {
     title: "Robust Rate of Sale",
     description:
@@ -61,4 +49,25 @@ export const FORECAST_INFO: ForecastInfoCard[] = [
     icon: Settings,
     color: "bg-green-600/10 text-green-600",
   },
+];
+
+export const CHART_DATA = [
+  {month: "Jan", inventory: 62, demand: 74, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Feb", inventory: 44, demand: 48, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Mar", inventory: 38, demand: 38, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Apr", inventory: 52, demand: 55, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {
+    month: "May",
+    inventory: 71,
+    demand: 60,
+    safetyStock: 32,
+    poArrival: "Nov 15 (+120)",
+  },
+  {month: "Jun", inventory: 62, demand: 57, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Jul", inventory: 48, demand: 44, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Aug", inventory: 40, demand: 38, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Sep", inventory: 53, demand: 52, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Oct", inventory: 72, demand: 66, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Nov", inventory: 64, demand: 60, safetyStock: 32, poArrival: "Nov 15 (+120)"},
+  {month: "Dec", inventory: 58, demand: 56, safetyStock: 32, poArrival: "Nov 15 (+120)"},
 ];

@@ -1,11 +1,11 @@
 import {FORECAST_INFO} from "@/mocks/cardsInfo";
-import {ForecastInfoCard} from "../cards/ForecastInfoCard";
+import { InfoCard } from "../ui/Cards/InfoCard";
 
-export const ForecastInfoGrid = () => {
+export const InfoGrid = () => {
   return (
     <div className="grid grid-cols-1 gap-3">
       {FORECAST_INFO.map((info) => (
-        <ForecastInfoCard key={info.title} {...info} />
+        <InfoCard key={info.title} {...info} />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import {Bell, Search, Sun} from "@/icons";
+import {Bell, Search, Sun} from "lucide-react";
 import IconButton from "../ui/Buttons/IconButton";
 import Image from "next/image";
 

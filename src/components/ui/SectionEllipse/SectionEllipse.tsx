@@ -1,13 +1,13 @@
 import React from "react";
 
 interface CardEllipseProps extends React.HTMLAttributes<HTMLDivElement> {
-  width?: number | string;
-  height?: number | string;
+  width?: number;
+  height?: number;
   left?: number | string;
   top?: number | string;
   right?: number | string;
   bottom?: number | string;
-  color?: string; 
+  color?: string;
   opacity?: number;
   blur?: number | string;
   style?: React.CSSProperties;
@@ -32,8 +32,8 @@ const SectionEllipse: React.FC<CardEllipseProps> = ({
     <div
       className={`absolute rounded-full pointer-events-none z-0 ${className}`}
       style={{
-        width: typeof width === "number" ? `${width}px` : width,
-        height: typeof height === "number" ? `${height}px` : height,
+        width,
+        height,
         left,
         top,
         right,

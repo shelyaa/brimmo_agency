@@ -11,7 +11,7 @@ const openSans = Open_Sans({
 
 const fixel = localFont({
   src: [{path: "../fonts/FixelDisplay-SemiBold.woff2"}],
-  
+
   variable: "--font-display",
 });
 
@@ -29,9 +29,7 @@ export default function RootLayout({
           <div className="flex-1 flex flex-col h-full overflow-hidden">
             <Header />
 
-            <main className="flex-1 overflow-auto p-6">
-              {children}
-            </main>
+            <main className="flex-1 overflow-auto p-4 md:p-2">{children}</main>
           </div>
         </div>
       </body>

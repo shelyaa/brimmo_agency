@@ -1,36 +1,39 @@
-import {ForecastFeatureGrid} from "@/components/grids/ForecastFeatureGrid";
-import {ForecastInfoGrid} from "@/components/grids/ForecastInfoGrid";
+import {FeatureGrid} from "@/components/grids/FeatureGrid";
+import {InfoGrid} from "@/components/grids/InfoGrid";
+import {ChartSection} from "@/components/sections/ChartSection";
 import {ForecastingHeaderSection} from "@/components/sections/ForecastingHeaderSection";
 import {HowForecastingWorksSection} from "@/components/sections/HowForecastingWorksSection";
-import ForecastButton from "@/components/ui/Buttons/ForecastButton";
-import {Eye} from "@/icons";
+import {Button} from "@/components/ui/Buttons/Button";
+import {Eye} from "lucide-react";
 
 export default function Packages() {
   return (
-    <div>
+    <>
       <ForecastingHeaderSection
         title="Location-Based Forecasting"
         description="Robust Rate of Sale forecasting with location-aware calculations"
       >
-        <ForecastButton variant="link" icon={<Eye />}>
+        <Button variant="link" icon={<Eye />}>
           View Forecast Accuracy
-        </ForecastButton>
-        <ForecastButton>Adjust Forecast Settings</ForecastButton>
+        </Button>
+        <Button>Adjust Forecast Settings</Button>
       </ForecastingHeaderSection>
-      <div className="flex gap-2 w-full">
+
+      <div className="flex gap-2 w-full flex-col sm:flex-row">
         <div>
-          <ForecastFeatureGrid />
+          <FeatureGrid />
+          <ChartSection />
         </div>
 
-        <div className="min-w-[440px]">
+        <div className="min-w-[380px] md:min-w-[440px]">
           <HowForecastingWorksSection
             title="How Forecasting Works"
             description="The forecasting system has been streamlined to use the robust rate of sale method across all locations for improved consistency and reliability."
           >
-            <ForecastInfoGrid />
+            <InfoGrid />
           </HowForecastingWorksSection>
         </div>
       </div>
-    </div>
+    </>
   );
 }
