@@ -6,7 +6,7 @@ import {HowForecastingWorksSection} from "@/components/sections/HowForecastingWo
 import {Button} from "@/components/ui/Buttons/Button";
 import {Eye} from "lucide-react";
 
-export default function Packages() {
+export default function Dashboard() {
   return (
     <>
       <ForecastingHeaderSection
@@ -19,13 +19,13 @@ export default function Packages() {
         <Button>Adjust Forecast Settings</Button>
       </ForecastingHeaderSection>
 
-      <div className="flex gap-2 w-full flex-col sm:flex-row">
+      <div className="flex gap-2 w-full flex-col lg:flex-row">
         <div>
           <FeatureGrid />
           <ChartSection />
         </div>
 
-        <div className="min-w-[380px] md:min-w-[440px]">
+        <div className="w-full xl:max-w-[440px]">
           <HowForecastingWorksSection
             title="How Forecasting Works"
             description="The forecasting system has been streamlined to use the robust rate of sale method across all locations for improved consistency and reliability."

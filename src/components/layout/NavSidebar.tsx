@@ -18,7 +18,7 @@ import clsx from "clsx";
 
 const menuItems = [
   {href: "/", icon: <Home />},
-  {href: "/packages", icon: <Package />},
+  {href: "/dashboard", icon: <Package />},
   {href: "/locations", icon: <MapPin />},
   {href: "/cart", icon: <ShoppingCart />},
   {href: "/transfers", icon: <ArrowDownUp />},

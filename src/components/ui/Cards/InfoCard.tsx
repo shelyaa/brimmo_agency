@@ -9,7 +9,7 @@ export function InfoCard({
   color,
 }: InfoCard) {
   return (
-    <div className="flex flex-col rounded-2xl bg-card p-[18px] max-w-[412px] min-h-[180px] flex-1 justify-between">
+    <div className="flex flex-col rounded-2xl bg-card p-[18px] min-h-[180px] flex-1 justify-between">
       <div>
         <IconButton color={color} size="sm" variant="static">
           <Icon />
